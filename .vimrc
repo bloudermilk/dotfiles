@@ -102,3 +102,11 @@ if has("statusline") && !&cp
   set statusline+=Line:%l/%L
   set statusline+=\ Col:%v
 endif
+
+""
+"" Mappings
+""
+
+" Tabs
+nmap ] :tabn<CR>
+nmap [ :tabp<CR>
