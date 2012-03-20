@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-ruby-conque"]
 	path = .vim/bundle/vim-ruby-conque
 	url = git://github.com/skwp/vim-ruby-conque.git
+[submodule ".vim/bundle/vim-coffee-script"]
+	path = .vim/bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
