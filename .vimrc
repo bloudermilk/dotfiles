@@ -18,10 +18,10 @@ set cursorline
 set cursorcolumn
 
 " Force yourself to use hjkl
-"nnoremap <Left> :echoe "Use h"<CR>
-"nnoremap <Right> :echoe "Use l"<CR>
-"nnoremap <Up> :echoe "Use k"<CR>
-"nnoremap <Down> :echoe "Use j"<CR>
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
 " Highlights the 81st column
 set colorcolumn=81
@@ -108,5 +108,13 @@ endif
 ""
 
 " Tabs
-nmap ] :tabn<CR>
-nmap [ :tabp<CR>
+map <C-l> :tabn<CR>
+map <C-h> :tabp<CR>
+
+
+""
+"" tmux
+""
+
+"" Apparently this is going to help copy/paste in tmux (http://bit.ly/GD9nyD)
+set clipboard=unnamed
