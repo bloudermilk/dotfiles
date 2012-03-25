@@ -1,0 +1,12 @@
+# OS X
+.DS_Store
+
+# Vim
+*.swo
+*.swp
+
+# Ruby/Rails
+.rvmrc
+config/database.yml
+.rbx
+.powrc
