@@ -1,5 +1,5 @@
-# Add support for ~/bin
-PATH=$HOME/bin:$PATH
+# Add support for ~/.bin
+PATH=$HOME/.bin:$PATH
 
 # Prefer brew-installed binaries over system binaries (specifically, postgres)
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
