@@ -81,7 +81,10 @@ endfunction
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrapping()
 
 " Treat JSON files like JavaScript
-au BufNewFile,BufRead *.json set ft=javascript
+au BufRead,BufRead *.json set ft=javascript
+
+" Syntax highlight Envfile
+au BufRead,BufNewFile Envfile set ft=ruby
 
 
 ""
