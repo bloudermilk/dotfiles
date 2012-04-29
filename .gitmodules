@@ -46,3 +46,6 @@
 [submodule "vim/bundle/html5.vim"]
 	path = vim/bundle/html5.vim
 	url = git://github.com/othree/html5.vim.git
+[submodule "vim/bundle/VimClojure"]
+	path = vim/bundle/VimClojure
+	url = git://github.com/vim-scripts/VimClojure.git

@@ -1,10 +1,10 @@
 # Add support for ~/.bin
-PATH=$HOME/.bin:$PATH
+export PATH=$HOME/.bin:$PATH
 
 # Prefer brew-installed binaries over system binaries (specifically, postgres)
-PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-EDITOR="vim"
+export EDITOR="vim"
 
 # Bash configuration
 shopt -s globstar autocd
@@ -13,6 +13,10 @@ export CLICOLOR=1 # I'm convinced this doesn't do a thing...
 # Git aliases
 alias stat="git status"
 alias fetch="git fetch"
+
+# Tmux aliases
+alias ta="tmux attach-session -t"
+alias tn="tmux new-session -s"
 
 # Git add all changes, commit.
 function gac {
