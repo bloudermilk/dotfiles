@@ -1,8 +1,8 @@
-# Add support for ~/.bin
-export PATH=$HOME/.bin:$PATH
-
 # Prefer brew-installed binaries over system binaries (specifically, postgres)
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# Add support for ~/.bin (prefer home binaries over brew binaries)
+export PATH=$HOME/.bin:$PATH
 
 export EDITOR="vim"
 
@@ -17,6 +17,7 @@ alias fetch="git fetch"
 # Tmux aliases
 alias ta="tmux attach-session -t"
 alias tn="tmux new-session -s"
+alias tl="tmux list-sessions"
 
 # Git add all changes, commit.
 function gac {
@@ -49,7 +50,7 @@ alias redis_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.redis.
 alias redis_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 
 # Profile editing
-alias prof="vim ~/.profile"
+alias prof="$EDITOR ~/.profile"
 alias reprof="source ~/.profile"
 
 # SSH config
