@@ -13,6 +13,7 @@ export CLICOLOR=1 # I'm convinced this doesn't do a thing...
 # Git aliases
 alias stat="git status"
 alias fetch="git fetch"
+alias gpr="git pull --rebase"
 
 # Tmux aliases
 alias ta="tmux attach-session -t"
