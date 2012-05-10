@@ -9,6 +9,8 @@ export EDITOR="vim"
 # Bash configuration
 shopt -s globstar autocd
 export CLICOLOR=1 # I'm convinced this doesn't do a thing...
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous On" # this allows you to automatically show completion without double tab-ing
 
 # Git aliases
 alias stat="git status"
