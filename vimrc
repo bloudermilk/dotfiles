@@ -95,7 +95,7 @@ set hlsearch    " highlight matches
 set incsearch   " incremental searching
 set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
-
+map // :nohl<CR>
 
 if has("statusline") && !&cp
   set laststatus=2  " always show the status bar
@@ -119,5 +119,5 @@ map <C-h> :tabp<CR>
 "" tmux
 ""
 
-"" Apparently this is going to help copy/paste in tmux (http://bit.ly/GD9nyD)
+" Apparently this is going to help copy/paste in tmux (http://bit.ly/GD9nyD)
 set clipboard=unnamed
