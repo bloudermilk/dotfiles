@@ -41,6 +41,7 @@ alias ll="ls -la"
 
 # Other aliases
 alias v="vim ."
+alias setenv='eval "$(rbenv vars)"'
 
 # Databases
 alias mysql_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
@@ -86,13 +87,6 @@ function cdr {
   cd $og_dir && echo Not in a project. You lost, fool?
 }
 
-# CD out of the current directory then back into it. Useful for reloading .rvmrc
-function cdoi {
-  local og_dir=`pwd`
-  cd ..
-  cd $og_dir
-}
-
 
 # Description: Moderately robust project navigation
 # Usage: project [prefix]
@@ -133,5 +127,5 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-# Load RVM into a shell session *as a function*
-[[ -s "/Users/bloudermilk/.rvm/scripts/rvm" ]] && source "/Users/bloudermilk/.rvm/scripts/rvm"
+# Load rbenv
+eval "$(rbenv init -)"

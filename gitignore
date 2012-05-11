@@ -6,7 +6,7 @@
 *.swp
 
 # Ruby/Rails
-.rvmrc
 config/database.yml
 .rbx
 .powrc
+.rbenv-vars

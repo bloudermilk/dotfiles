@@ -1,1 +1,2 @@
 export POW_DST_PORT=88
+export PATH="/Users/bloudermilk/.rbenv/shims:/Users/bloudermilk/.rbenv/bin:$PATH"
