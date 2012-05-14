@@ -114,7 +114,9 @@ endif
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-n> :tabnew<CR>
-
+map <Tab> <C-W>w " Cycle between windows with tab
+map <Bar> <C-W>v<C-W><Right> " Split vertically and go to new window
+map _     <C-W>s<C-W><Down> " Split horizontally and go to new window
 
 ""
 "" tmux
