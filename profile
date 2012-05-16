@@ -53,6 +53,10 @@ alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 alias redis_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 alias redis_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 
+# Rails
+alias log="tail -f log/development.log"
+alais restart="touch tmp/restart.txt"
+
 # Profile editing
 alias prof="$EDITOR ~/.profile"
 alias reprof="source ~/.profile"
