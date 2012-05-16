@@ -55,7 +55,7 @@ alias redis_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.pl
 
 # Rails
 alias log="tail -f log/development.log"
-alais restart="touch tmp/restart.txt"
+alias restart="touch tmp/restart.txt"
 
 # Profile editing
 alias prof="$EDITOR ~/.profile"
