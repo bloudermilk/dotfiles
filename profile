@@ -71,7 +71,7 @@ function boom {
 
 # Blow that DB up (restarts pow so pg doesn't flip out)
 function bigboom {
-  boom && rake db:drop db:create db:migrate db:seed
+  boom && bundle exec rake db:drop db:create db:migrate db:seed
 }
 
 # Usage: cdu [count=1]
