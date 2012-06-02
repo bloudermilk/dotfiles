@@ -33,6 +33,14 @@ function gac {
   git commit -m "$1"
 }
 
+# Swap the locations of two files
+function swap {
+  local tmpfile=$(mktemp $(dirname "$1")/XXXXXX)
+  mv "$1" "$tmpfile"
+  mv "$2" "$1"
+  mv "$tmpfile" "$2"
+}
+
 # Navigational aliases
 alias u="cdu"
 alias r="cdr"
