@@ -6,7 +6,13 @@
 *.swp
 
 # Ruby/Rails
-config/database.yml
+/config/database.yml
 .rbx
-.powrc
-.rbenv-vars
+/.powrc
+/.rbenv-vars
+/.rbenv-version
+/public/system
+
+# Node
+node_modules
+npm-debug.log
