@@ -6,6 +6,9 @@ export PATH=$HOME/.bin:$PATH
 
 export EDITOR="vim"
 
+# Pass escape codes to terminal when using less
+export LESS=-R
+
 # Bash configuration
 shopt -s globstar autocd
 export CLICOLOR=1 # I'm convinced this doesn't do a thing...
