@@ -63,6 +63,10 @@ alias pg_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.postgresq
 alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias redis_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 alias redis_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
+alias neo_start="neo4j start"
+alias neo_stop="neo4j stop"
+alias cass_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
+alias cass_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
 
 # Rails
 alias log="tail -f log/development.log"
