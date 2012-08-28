@@ -4,6 +4,7 @@
 # Vim
 *.swo
 *.swp
+*.swn
 
 # Ruby/Rails
 /config/database.yml
