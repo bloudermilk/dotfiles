@@ -27,7 +27,7 @@ set cursorcolumn
 set colorcolumn=81
 
 " Automatically remove trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\s\+$//e
 
 " Keep the cursor in the middle
 set scrolloff=50
