@@ -1,5 +1,5 @@
 # Prefer brew-installed binaries over system binaries (specifically, postgres)
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 
 # Add support for ~/.bin (prefer home binaries over brew binaries)
 export PATH=$HOME/.bin:$PATH
@@ -19,6 +19,7 @@ bind "set show-all-if-ambiguous On" # this allows you to automatically show comp
 alias stat="git status"
 alias fetch="git fetch"
 alias gpr="git pull --rebase"
+alias gprp="gpr && git push"
 
 # Tmux aliases
 alias ta="tmux attach-session -t"
@@ -53,20 +54,6 @@ alias ll="ls -la"
 # Other aliases
 alias v="vim ."
 alias setenv='eval "$(rbenv vars)"'
-
-# Databases
-alias mysql_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
-alias mysql_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
-alias mongo_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
-alias mongo_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
-alias pg_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias redis_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
-alias redis_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
-alias neo_start="neo4j start"
-alias neo_stop="neo4j stop"
-alias cass_start="launchctl load -F ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
-alias cass_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
 
 # Rails
 alias log="tail -f log/development.log"
