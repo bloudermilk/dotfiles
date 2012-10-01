@@ -101,7 +101,7 @@ function cdr {
 export PROJECT_DIR=~/Projects
 function project {
   if [[ -z $1 ]]; then cd $PROJECT_DIR; ls; return 0; fi
-  local projects=`ls $PROJECT_DIR | grep ^$1`
+  local projects=`ls $PROJECT_DIR | grep $1`
   if [[ $projects == "" ]]; then echo "No matching projects"; return 0; fi
   if [[ `echo "$projects" | wc -l` == "       1" ]]; then
     cd $PROJECT_DIR/$projects/$2; return 0;
