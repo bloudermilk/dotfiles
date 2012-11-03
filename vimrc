@@ -125,14 +125,10 @@ map <Bar> <C-W>v<C-W><Right>
 map _ <C-W>s<C-W><Down>
 
 ""
-"" tmux
-""
-
-" Apparently this is going to help copy/paste in tmux (http://bit.ly/GD9nyD)
-set clipboard=unnamed
-
-""
 "" Other
 ""
 
 set tabpagemax=100
+set clipboard=unnamed
+
+let NERDTreeHijackNetrw=1
