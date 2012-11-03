@@ -26,6 +26,10 @@ alias ta="tmux attach-session -t"
 alias tn="tmux new-session -s"
 alias tl="tmux list-sessions"
 
+# Pilot
+PATH=$HOME/Projects/pilot/bin:$PATH
+eval "$(pilot init -)"
+
 # Git add all changes, commit.
 function gac {
   if [ ! $# -eq 1 ]; then
