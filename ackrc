@@ -1,9 +1,9 @@
 --type-add=ruby=.haml,.rake,.rsel,.builder
 --type-add=html=.html.erb,.html.haml
 --type-add=js=.js.erb
---type-add=sass=.scss
 
 --type-set=coffee=.coffee,.coffee.erb
+--type-set=sass=.scss
 
 --sort-files
 --color
