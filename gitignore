@@ -5,6 +5,7 @@
 *.swo
 *.swp
 *.swn
+tags
 
 # Ruby/Rails
 /config/database.yml
