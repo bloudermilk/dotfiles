@@ -17,6 +17,9 @@ let mapleader = ","   " Remap the leader key
 set cursorline
 set cursorcolumn
 
+" Support mouse scrolling
+set mouse=a
+
 " Force yourself to use hjkl
 " nnoremap <Left> :echoe "Use h"<CR>
 " nnoremap <Right> :echoe "Use l"<CR>
