@@ -1,12 +1,45 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+""
+"" Vundle
+""
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle "gmarik/vundle"
+
+Bundle "Rename2"
+Bundle "VimClojure"
+Bundle "altercation/vim-colors-solarized"
+Bundle "bloudermilk/vim-protobuf"
+Bundle "cakebaker/scss-syntax.vim"
+Bundle "kchmck/vim-coffee-script"
+Bundle "kien/ctrlp.vim"
+Bundle "mileszs/ack.vim"
+Bundle "mmalecki/vim-node.js"
+Bundle "nono/vim-handlebars"
+Bundle "othree/html5.vim"
+Bundle "pangloss/vim-javascript"
+Bundle "scrooloose/nerdtree"
+Bundle "tpope/vim-endwise"
+Bundle "tpope/vim-fugitive"
+Bundle "tpope/vim-git"
+Bundle "tpope/vim-markdown"
+Bundle "tpope/vim-pathogen"
+Bundle "tpope/vim-surround"
+Bundle "vim-ruby/vim-ruby"
+
+" Enable filetype plugins
+filetype plugin indent on
 
 
 ""
 "" Basic Setup
 ""
 
-set nocompatible      " Use vim, no vi defaults
 set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
@@ -68,9 +101,6 @@ set listchars+=precedes:<         " The character to show in the last column whe
 ""
 "" Files
 ""
-
-" Filetype plugins
-filetype plugin indent on
 
 " Some file types should wrap their text
 function! s:setupWrapping()
