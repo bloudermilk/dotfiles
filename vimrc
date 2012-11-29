@@ -35,7 +35,6 @@ Bundle "vim-ruby/vim-ruby"
 " Enable filetype plugins
 filetype plugin indent on
 
-
 ""
 "" Basic Setup
 ""
