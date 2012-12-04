@@ -1,3 +1,6 @@
+# Load rbenv
+eval "$(rbenv init -)"
+
 # Prefer brew-installed binaries over system binaries (specifically, postgres)
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 
@@ -57,7 +60,6 @@ alias ll="ls -la"
 
 # Other aliases
 alias v="vim ."
-alias setenv='eval "$(rbenv vars)"'
 
 # Rails
 alias log="tail -f log/development.log"
@@ -136,6 +138,3 @@ export PS1='\W $(git branch &>/dev/null; if [ $? -eq 0 ]; then echo "\[\033[01;3
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
-
-# Load rbenv
-eval "$(rbenv init -)"
