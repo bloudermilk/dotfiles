@@ -1,7 +1,6 @@
 ""
 "" Vundle
 ""
-
 set nocompatible
 filetype off
 
@@ -35,6 +34,7 @@ Bundle "vim-ruby/vim-ruby"
 " Enable filetype plugins
 filetype plugin indent on
 
+
 ""
 "" Basic Setup
 ""
@@ -67,6 +67,18 @@ set colorcolumn=81
 " Keep the cursor in the middle
 set scrolloff=50
 
+" Scroll fast
+set lazyredraw
+
+" Allow up to 999 visible tabs
+set tabpagemax=999
+
+" Use the system clipboard
+set clipboard=unnamed
+
+" Use NERDTree instead of netrw
+let NERDTreeHijackNetrw=1
+
 
 ""
 "" Colors!
@@ -96,6 +108,7 @@ set listchars+=extends:>          " The character to show in the last column whe
                                   " off and the line continues beyond the right of the screen
 set listchars+=precedes:<         " The character to show in the last column when wrap is
                                   " off and the line continues beyond the right of the screen
+
 
 ""
 "" Files
@@ -138,6 +151,7 @@ if has("statusline") && !&cp
   set statusline+=\ Col:%v
 endif
 
+
 ""
 "" Mappings
 ""
@@ -156,6 +170,7 @@ map <Bar> <C-W>v<C-W><Right>
 " Split horizontally and go to new window
 map _ <C-W>s<C-W><Down>
 
+
 ""
 "" Auto-create directories on save (http://stackoverflow.com/a/4294176/29297)
 ""
@@ -172,13 +187,3 @@ augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
-
-""
-"" Other
-""
-
-set tabpagemax=100
-set clipboard=unnamed
-set lazyredraw
-
-let NERDTreeHijackNetrw=1
