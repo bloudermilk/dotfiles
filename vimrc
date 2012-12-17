@@ -179,5 +179,6 @@ augroup END
 
 set tabpagemax=100
 set clipboard=unnamed
+set lazyredraw
 
 let NERDTreeHijackNetrw=1
