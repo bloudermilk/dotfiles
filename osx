@@ -1,4 +1,4 @@
-# Make keys repeat insanely fast (requires restart?)
+# Make keys repeat insanely fast (requires restart)
 defaults write NSGlobalDomain KeyRepeat -int 0
 
 # Disable dashboard entirely (requires `$ killall Dashboard`)
