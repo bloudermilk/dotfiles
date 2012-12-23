@@ -5,8 +5,10 @@ task :default => :install
 task :install do
   Dir.foreach(".") do |file|
     unless SKIP_FILES.include?(file) || file.start_with?(".")
-      file_with_path = File.expand_path(file)
-      `ln -s -f #{file_with_path} ~/.#{file}`
+      source = File.join(Dir.pwd, file)
+      destination = File.join(ENV["HOME"], ".#{file}")
+      rm_rf destination
+      ln_s source, destination
     end
   end
 end
