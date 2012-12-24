@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # Description: move up directories until you're a project's root folder
 # Usage: cdr
 # Notes: Assumes the root of your project is a folder with .git/ in it

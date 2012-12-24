@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # Description: Git add all changes, commit.
 
 if [ ! $# -eq 1 ]; then

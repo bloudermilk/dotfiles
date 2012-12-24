@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # Usage: cdu [count=1]
 # Where count is the number of directories you want to go up
 

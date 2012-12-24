@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 local tmpfile=$(mktemp $(dirname "$1")/XXXXXX)
 mv "$1" "$tmpfile"
