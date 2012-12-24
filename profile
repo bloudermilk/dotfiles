@@ -92,8 +92,12 @@ function cdr {
   cd $og_dir && echo Not in a project. You lost, fool?
 }
 
-function cd () {
+function cd {
   builtin cd "$@" && ls
+}
+
+function powify {
+  ln -s `pwd` $1
 }
 
 # Use local SSH keys when SSH'd into a server
