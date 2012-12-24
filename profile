@@ -56,6 +56,7 @@ function swap {
 }
 
 # Navigational aliases
+alias p="cd ~/Projects"
 alias u="cdu"
 alias r="cdr"
 alias ll="ls -la"
@@ -89,6 +90,10 @@ function cdr {
     if [ -d .git ]; then return 0; else cd ..; fi
   done
   cd $og_dir && echo Not in a project. You lost, fool?
+}
+
+function cd () {
+  builtin cd "$@" && ls
 }
 
 # Use local SSH keys when SSH'd into a server
