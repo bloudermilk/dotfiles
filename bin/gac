@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+# Description: Git add all changes, commit.
+
+if [ ! $# -eq 1 ]; then
+  echo "Usage: gac <commit message>"
+  return
+fi
+
+git add -A
+git commit -m "$1"

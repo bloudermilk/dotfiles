@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+# Usage: cdu [count=1]
+# Where count is the number of directories you want to go up
+
+for (( c=0; c<${1:-1}; c++ )); do cd ..; done
