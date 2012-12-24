@@ -10,7 +10,20 @@ ZSH_THEME="robbyrussell"
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 export UPDATE_ZSH_DAYS=1
 
-plugins=(git)
+plugins=(
+  brew
+  coffee
+  gem
+  git
+  lein
+  npm
+  rails3
+  redis-cli
+  vagrant
+  zsh-syntax-highlighting
+)
+
+fpath=(`brew --prefix`/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
