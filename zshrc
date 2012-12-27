@@ -27,9 +27,9 @@ fpath=(`brew --prefix`/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/.zsh/options.zsh
-source ~/.zsh/exports.zsh
-source ~/.zsh/aliases.zsh
+for file in ~/.zsh/*.zsh; do
+  source $file
+done
 
 # Load rbenv
 eval "$(rbenv init -)"
