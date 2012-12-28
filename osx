@@ -6,3 +6,6 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # Disable the special character popup when holding keys (requires restart)
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Allow for text selection within QuickLook (requires `$ killall Finder`)
+defaults write com.apple.finder QLEnableTextSelection -bool true
