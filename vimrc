@@ -163,6 +163,7 @@ map <C-n> :tabnew<CR>
 
 " Cycle between windows with tab
 map <Tab> <C-W>w
+map <S-Tab> <C-W>W
 
 " Split vertically and go to new window
 map <Bar> <C-W>v<C-W><Right>
