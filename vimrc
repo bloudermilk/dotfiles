@@ -188,3 +188,10 @@ augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
+
+
+""
+"" ctrp-p.vim configuration
+""
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
