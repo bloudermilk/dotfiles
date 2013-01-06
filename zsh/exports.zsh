@@ -16,4 +16,4 @@ export EDITOR="vim"
 export CDPATH=".:~:~/Projects"
 
 # Pass escape codes to terminal when using less
-export LESS=-R
+export LESS=-RS
