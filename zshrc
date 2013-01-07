@@ -7,8 +7,10 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
+DISABLE_AUTO_TITLE="true"
+
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-export UPDATE_ZSH_DAYS=1
+export UPDATE_ZSH_DAYS=7
 
 plugins=(
   brew
