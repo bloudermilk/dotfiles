@@ -37,5 +37,5 @@ done
 eval "$(rbenv init -)"
 
 # Pilot
-PATH=$HOME/Projects/pilot/bin:$PATH
+PATH=$PATH:$HOME/Projects/pilot/bin
 eval "$(pilot init -)"
