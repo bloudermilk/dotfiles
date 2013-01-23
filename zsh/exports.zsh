@@ -13,7 +13,7 @@ export PATH=$PATH:/usr/local/share/npm/bin
 export EDITOR="vim"
 
 # cd to projects anywhere
-export CDPATH=".:~:~/Projects"
+export CDPATH=".:~/Projects"
 
 # Pass escape codes to terminal when using less
 export LESS=-RS
