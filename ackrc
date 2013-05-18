@@ -4,9 +4,15 @@
 
 --type-set=coffee=.coffee,.coffee.erb
 --type-set=sass=.scss
+--type-set=handlebars=.hbs,.handlebars
 
 --sort-files
 --color
 --follow
 --group
 --smart-case
+
+--ignore-dir=build
+--ignore-dir=.bundle
+--ignore-dir=tmp
+--ignore-dir=log
