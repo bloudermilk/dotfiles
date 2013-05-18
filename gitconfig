@@ -12,9 +12,6 @@
 [push]
   default = tracking
 
-[heroku]
-  account = personal
-
 [color]
   branch = auto
   diff = auto
@@ -35,3 +32,7 @@
   added = yellow
   changed = green
   untracked = cyan
+[credential]
+	helper = osxkeychain
+[heroku]
+	account = personal
