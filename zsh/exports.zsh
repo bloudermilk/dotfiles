@@ -9,6 +9,9 @@ export PATH=$HOME/.bin:$PATH
 # Support globally-installed NPM modules
 export PATH=$PATH:/usr/local/share/npm/bin
 
+# Use the locally-installed pilot
+export PATH=$PATH:$HOME/Projects/pilot/bin
+
 # <3 vim
 export EDITOR="vim"
 
@@ -17,3 +20,6 @@ export CDPATH=".:~/Projects"
 
 # Pass escape codes to terminal when using less
 export LESS=-RS
+
+# Print CPU usage statistics for any command that runs more than 5 seconds
+export REPORTTIME=5
