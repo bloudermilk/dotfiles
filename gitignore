@@ -14,8 +14,13 @@ tags
 /.powrc
 /.rbenv-vars
 /.rbenv-version
+/.ruby-version
 /public/system
+/public/uploads
 
 # Node
-node_modules
-npm-debug.log
+/node_modules
+/npm-debug.log
+
+# Pilot
+/.pilot-manifest
