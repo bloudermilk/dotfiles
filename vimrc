@@ -30,10 +30,12 @@ Bundle "tpope/vim-markdown"
 Bundle "tpope/vim-pathogen"
 Bundle "tpope/vim-surround"
 Bundle "vim-ruby/vim-ruby"
+Bundle "tpope/vim-rails"
+Bundle "tpope/vim-bundler"
+Bundle "tpope/vim-abolish"
 
 " Enable filetype plugins
 filetype plugin indent on
-
 
 ""
 "" Basic Setup
@@ -85,8 +87,11 @@ let NERDTreeHijackNetrw=1
 ""
 
 syntax enable
-set background=dark
 colorscheme solarized
+
+if !empty($LIGHT)
+  set background=light
+endif
 
 
 ""
@@ -171,9 +176,13 @@ map <Bar> <C-W>v<C-W><Right>
 " Split horizontally and go to new window
 map _ <C-W>s<C-W><Down>
 
+" In visual mode, join a multi-line selection then split it into lines less than
+" or equal to `:textwidth` columns.
+vmap aa JVgq
+
 
 ""
-"" Auto-create directories on save (http://stackoverflow.com/a/4294176/29297)
+"" Auto-create directories on save (via http://stackoverflow.com/a/4294176/29297)
 ""
 
 function s:MkNonExDir(file, buf)
@@ -195,3 +204,13 @@ augroup END
 ""
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+""
+"" Open current file (inspired by github.com/stevenharman/config)
+""
+function! OpenFile()
+  :w
+  exec ':silent !open ' . expand("%")
+  redraw!
+endfunction
+map <leader>md :call OpenFile()<cr>
