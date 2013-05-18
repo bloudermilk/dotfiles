@@ -36,6 +36,5 @@ done
 # Load rbenv
 eval "$(rbenv init -)"
 
-# Pilot
-PATH=$PATH:$HOME/Projects/pilot/bin
+# Load Pilot
 eval "$(pilot init -)"
