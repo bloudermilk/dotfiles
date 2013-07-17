@@ -23,3 +23,9 @@ export LESS=-RS
 
 # Print CPU usage statistics for any command that runs more than 5 seconds
 export REPORTTIME=5
+
+# SSL cert courtesy of: brew install curl-ca-bundle
+export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+
+# Don't auto-bundle exec certain gems
+export NOEXEC_EXCLUDE="zeus"
