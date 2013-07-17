@@ -78,9 +78,6 @@ set tabpagemax=999
 " Use the system clipboard
 set clipboard=unnamed
 
-" Use NERDTree instead of netrw
-let NERDTreeHijackNetrw=1
-
 
 ""
 "" Colors!
@@ -91,6 +88,8 @@ colorscheme solarized
 
 if !empty($LIGHT)
   set background=light
+else
+  set background=dark
 endif
 
 
@@ -206,6 +205,14 @@ augroup END
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 ""
+"" NERDTree config
+""
+
+" Use NERDTree instead of netrw
+let NERDTreeHijackNetrw=1
+
+
+""
 "" Open current file (inspired by github.com/stevenharman/config)
 ""
 function! OpenFile()
@@ -214,3 +221,8 @@ function! OpenFile()
   redraw!
 endfunction
 map <leader>md :call OpenFile()<cr>
+
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
+set spell
