@@ -5,6 +5,7 @@
 [core]
   excludesfile = ~/.gitignore
   editor = vim
+  attributesfile = ~/.gitattributes
 
 [alias]
   co = checkout
