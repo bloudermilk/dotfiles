@@ -1,0 +1,4 @@
+#!/bin/bash
+# Description: Markdown quote the pasteboard and re-copy
+
+pbpaste | sed -e "s/^/> /" | pbcopy
