@@ -27,12 +27,15 @@ Bundle "tpope/vim-endwise"
 Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-git"
 Bundle "tpope/vim-markdown"
-Bundle "tpope/vim-pathogen"
-Bundle "tpope/vim-surround"
 Bundle "vim-ruby/vim-ruby"
 Bundle "tpope/vim-rails"
-Bundle "tpope/vim-bundler"
-Bundle "tpope/vim-abolish"
+
+" Should try to use
+" Bundle "tpope/vim-surround"
+" Bundle "tpope/vim-bundler"
+" Bundle "tpope/vim-abolish"
+" Bundle "tomtom/tcomment_vim"
+" Bundle "Valloric/YouCompleteMe"
 
 " Enable filetype plugins
 filetype plugin indent on
@@ -46,6 +49,12 @@ set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
 set encoding=utf-8    " Set default encoding to UTF-8
 let mapleader = ","   " Remap the leader key
+set autoread          " Reload files when changed on disk
+set gdefault          " Assume the /g flag on :s substitutions to replace all matches in a line
+set shiftround        " Don't tab to odd spaces
+
+" Disable Ex mode
+map Q <Nop>
 
 " Show crosshairs
 set cursorline
@@ -103,6 +112,7 @@ set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
+set autoindent
 
 " List chars
 set listchars=""                  " Reset the listchars
@@ -226,3 +236,6 @@ map <leader>md :call OpenFile()<cr>
 noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 
 set spell
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
