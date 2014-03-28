@@ -19,22 +19,25 @@ plugins=(
   git
   lein
   npm
-  rails3
+  rails
   redis-cli
   vagrant
   zsh-syntax-highlighting
 )
 
-fpath=(`brew --prefix`/share/zsh-completions $fpath)
-
-source $ZSH/oh-my-zsh.sh
-
 for file in ~/.zsh/*.zsh; do
   source $file
 done
+
+fpath=(`brew --prefix`/share/zsh-completions $fpath)
+
+source $ZSH/oh-my-zsh.sh
 
 # Load rbenv
 eval "$(rbenv init -)"
 
 # Load Pilot
 eval "$(pilot init -)"
+
+# Load virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
