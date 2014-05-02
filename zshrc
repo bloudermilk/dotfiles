@@ -38,6 +38,3 @@ eval "$(rbenv init -)"
 
 # Load Pilot
 eval "$(pilot init -)"
-
-# Load virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
