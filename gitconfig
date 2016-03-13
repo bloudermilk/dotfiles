@@ -6,6 +6,7 @@
   excludesfile = ~/.gitignore
   editor = vim
   attributesfile = ~/.gitattributes
+  whitespace = cr-at-eol
 
 [alias]
   co = checkout
@@ -35,5 +36,3 @@
   untracked = cyan
 [credential]
 	helper = osxkeychain
-[heroku]
-	account = personal
