@@ -1,3 +1,4 @@
--T
--d postgresql
+--database=postgresql
+--skip-test-unit
 --skip-spring
+--skip-turbolinks
