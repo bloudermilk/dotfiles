@@ -2,9 +2,7 @@
 .DS_Store
 
 # Vim
-*.swo
-*.swp
-*.swn
+*.sw[a-z]
 .netrwhist
 tags
 
@@ -27,3 +25,6 @@ tags
 
 # Python
 *.pyc
+
+# Personal
+.env
