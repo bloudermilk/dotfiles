@@ -25,7 +25,7 @@ export LESS=-RS
 export REPORTTIME=5
 
 # SSL cert courtesy of: brew install curl-ca-bundle
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 
 # Don't auto-bundle exec certain gems
 export NOEXEC_EXCLUDE="zeus"
