@@ -25,6 +25,3 @@ tags
 
 # Python
 *.pyc
-
-# Personal
-.env
