@@ -12,8 +12,8 @@ export PATH=$PATH:/usr/local/share/npm/bin
 # Use the locally-installed pilot
 export PATH=$PATH:$HOME/Projects/pilot/bin
 
-# <3 vim
-export EDITOR="vim"
+# <3 Atom
+export EDITOR="atom"
 
 # cd to projects anywhere
 export CDPATH=".:~/Projects"
