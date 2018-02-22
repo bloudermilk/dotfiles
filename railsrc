@@ -1,4 +1,6 @@
 --database=postgresql
---skip-test-unit
---skip-spring
+--skip-test
 --skip-turbolinks
+--skip-coffee
+--skip-spring
+
