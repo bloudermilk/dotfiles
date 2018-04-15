@@ -1,10 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Use this theme from Oh My Zsh
 ZSH_THEME="robbyrussell"
 
 DISABLE_AUTO_TITLE="true"
@@ -14,14 +11,11 @@ export UPDATE_ZSH_DAYS=7
 
 plugins=(
   brew
-  coffee
   gem
   git
-  lein
   npm
   rails
   redis-cli
-  vagrant
   zsh-syntax-highlighting
 )
 
@@ -34,7 +28,4 @@ fpath=(`brew --prefix`/share/zsh-completions $fpath)
 source $ZSH/oh-my-zsh.sh
 
 # Load rbenv
-eval "$(rbenv init -)"
-
-# Load Pilot
-eval "$(pilot init -)"
+#eval "$(rbenv init -)"

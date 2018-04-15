@@ -9,9 +9,6 @@ export PATH=$HOME/.bin:$PATH
 # Support globally-installed NPM modules
 export PATH=$PATH:/usr/local/share/npm/bin
 
-# Use the locally-installed pilot
-export PATH=$PATH:$HOME/Projects/pilot/bin
-
 # <3 Atom
 export EDITOR="atom"
 
@@ -23,9 +20,3 @@ export LESS=-RS
 
 # Print CPU usage statistics for any command that runs more than 5 seconds
 export REPORTTIME=5
-
-# SSL cert courtesy of: brew install curl-ca-bundle
-export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
-
-# Don't auto-bundle exec certain gems
-export NOEXEC_EXCLUDE="zeus"
