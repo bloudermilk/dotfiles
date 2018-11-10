@@ -8,3 +8,6 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # Allow for text selection within QuickLook (requires `$ killall Finder`)
 defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# Remove all persistent apps from the Dock
+defaults write com.apple.dock persistent-apps -array
