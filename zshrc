@@ -1,3 +1,8 @@
+
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
+# Load Homebrew first
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -16,7 +21,7 @@ plugins=(
   npm
   rails
   redis-cli
-  zsh-syntax-highlighting
+  # zsh-syntax-highlighting
 )
 
 for file in ~/.zsh/*.zsh; do

@@ -1,10 +1,7 @@
 # Make keys repeat insanely fast (requires restart)
 defaults write -g ApplePressAndHoldEnabled -bool false
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
-
-# Disable dashboard entirely (requires `$ killall Dashboard`)
-defaults write com.apple.dashboard mcx-disabled -boolean YES
+# defaults write NSGlobalDomain KeyRepeat -int 1
+# defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Allow for text selection within QuickLook (requires `$ killall Finder`)
 defaults write com.apple.finder QLEnableTextSelection -bool true
