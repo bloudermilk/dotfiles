@@ -29,3 +29,6 @@ alias restore_mac='sudo ifconfig en0 ether YOUR_ORIGINAL_MAC_ADDRESS_GOES_HERE'
 # Other aliases
 alias v="vim ."
 alias dopython="source /usr/local/bin/virtualenvwrapper.sh"
+
+# Not aliases
+function awscreds() { eval "$(aws configure export-credentials --profile $@ --format env)" }

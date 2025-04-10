@@ -2,7 +2,7 @@
 
 # Prefer brew-installed binaries over system binaries (specifically, postgres)
 # TODO: Old homebrew location?
-# export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # Add support for ~/.bin (prefer home binaries over brew binaries)
 export PATH=$HOME/.bin:$PATH
